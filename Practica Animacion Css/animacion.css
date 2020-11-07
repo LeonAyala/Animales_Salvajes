@@ -1,0 +1,554 @@
+/*
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ddd;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #093b8b;
+    flex-wrap: wrap;
+}
+*/
+/*
+.contenedor-flex{
+    display: flex;
+    border: rgb(189, 199, 223) solid 3px;
+    padding: 20px;
+    background: #222;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 16px 15px 0 rgba(0,0, 0, .8);
+}
+
+
+
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    margin: 0px 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input{
+    border: none;
+    padding: 20px 20px;
+    margin: 10px 5px;
+    width: 100%;
+    max-width: 300px;
+    background: #333;
+    color: #fff;
+    border-top: 3px solid #377ef0;
+}
+
+.form-input:focus{
+    background: linear-gradient(to top, transparent, #377ef0);
+    outline: none;
+}
+
+.form-input:focus{
+    border: none;
+}
+
+.textarea{
+   min-height: 140px;
+   max-height: 140px;
+   max-width: 300px;
+   min-width: 300px;
+}
+
+.button{
+     background: #377ef0;
+     border-bottom: none;
+     box-shadow: 0 5px 5px 0 rgba(0,0, 0, .5);
+}
+
+.contenedor-img{
+    border-radius: 50%;
+    padding: 0px 20px;
+    background: rgb(189, 199, 223);
+    max-height: 350px;
+    box-shadow: 0 16px 15px 0 rgba(0,0, 0, .8);
+}
+
+.contenedor-img img{
+    width: 100%;
+    max-width: 350px;
+}
+
+*/
+
+/*--------------ANIMACIONES------------*/
+
+body{
+display: flex;
+height: 130vh;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;
+background:url(img/fondoPrincipal.jpg);
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(34, 117, 34);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(255, 255, 255,.2);
+    border-right: 5px solid  rgb(21, 136, 21);
+}
+
+.title{
+    font-size: 50px;
+    color: #fff;
+    padding: 50px;
+    background: linear-gradient(to bottom, rgba(5, 243, 5, 0.527), rgba(176, 233, 169, 0.479));
+    border-radius: 50px;
+    border: 1px solid #fff;
+    margin-top: -40px;
+    animation-name: titulo;
+    animation-duration: 3s;
+    background:url(img/fondoPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #fff;
+    background: linear-gradient(to top, #fff, #222);
+    position: relative;
+    padding: 250px 300px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .6); 
+    background:rgba(68, 163, 5, 0.349);
+    animation-name: contenedor;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+}
+
+
+.cajaA , .cajaB, .cajaC, .cajaD, .cajaE, .cajaF, .cajaG
+, .cajaK, .cajaL{
+    width: 250px;
+    height: 210px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .6); 
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cajaA{
+    z-index: 100;
+    color: #fff;
+    font-weight: bolder;
+    animation-name: cajaA;
+    animation-duration:8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background: url(img/plumage-176723_1280.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-delay: 4s;
+}
+
+.cajaB{
+    background: rgba(72, 192, 3, 0.541);
+    position: absolute;
+    z-index: 90;
+    animation-name: cajaB;
+    animation-duration:8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-fill-mode:both;
+}
+
+.cajaC{
+    background: rgba(72, 192, 3, 0.541);
+    position: absolute;
+    z-index: 80;
+    animation-name: cajaC;
+    animation-duration:8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-fill-mode:both;
+}
+
+.cajaD{
+    background: rgba(72, 192, 3, 0.541);
+    position: absolute;
+    z-index: 70;
+    animation-name: cajaD;
+    animation-duration:8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-fill-mode:both;
+}
+
+.cajaE{
+    background: rgba(72, 192, 3, 0.541);
+    position: absolute;
+    z-index: 60;
+    animation-name:cajaE;
+    animation-duration:8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-fill-mode:both;
+}
+
+.cajaF{
+    background: rgba(214, 211, 17, 0.644);
+    position: absolute;
+    z-index: 50;
+    animation-name:cajaF;
+    animation-duration:8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-fill-mode:both;
+}
+
+.cajaG{
+    background: rgba(214, 211, 17, 0.644);
+    position: absolute;
+    z-index: 40;
+    animation-name:cajaG;
+    animation-duration:8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-fill-mode:both;
+}
+
+.cajaK{
+    background: rgba(214, 211, 17, 0.644);
+    position: absolute;
+    z-index: 20;
+    animation-name:cajaK;
+    animation-duration:8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-fill-mode:both;
+}
+
+.cajaL{
+    background: rgba(214, 211, 17, 0.644);
+    position: absolute;
+    z-index: 10;
+    animation-name:cajaL;
+    animation-duration:8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-fill-mode:both;
+}
+
+@keyframes titulo{
+    0%{
+        transform: scale(0.3);
+    }
+
+    50%{
+        transform: scale(0.6);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes contenedor{
+    0%   {
+        background-color:rgba(81, 255, 0, 0.356); 
+        left:0px; 
+    }
+
+  10%  {
+    background-color:rgba(79, 187, 12, 0.815); 
+    left:130px; 
+    }
+
+  30%  {
+      background-color:rgba(125, 179, 56, 0.603); 
+      left:100px; 
+    }
+
+  50%  {
+      background-color:rgba(7, 102, 7, 0.288); 
+      left:0px; 
+    }
+
+  70% {
+      background-color:rgba(79, 187, 12, 0.815); 
+      left:-130px; 
+    }
+
+    90%{
+        background-color:rgba(32, 167, 43, 0.541); 
+        left: -100px;
+    }
+
+    100%{
+        background: rgba(30, 148, 6, 0.342);
+        left: -40px;
+    }
+
+
+}
+
+@keyframes cajaA{
+    0%{
+        border-radius: 15%;
+        transform: scale(1.1);
+    }
+
+    50%{
+        border-radius: 30%;
+        transform: scale(1.2);
+    }
+
+    100%{
+        border-radius: 50%;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes cajaB{
+
+    0%{
+        transform: translateX(50%);
+        border-radius: 15%;
+    }
+
+    50%{
+        transform: translateX(100%);
+        border-radius: 30%;
+    }   
+
+    100%{
+        transform: translateX(100%) translateY(100%);
+        border-radius: 50%;
+    }
+}
+
+@keyframes cajaC{
+    0%{
+        transform: translateX(-50%);
+        border-radius: 15%;
+    }
+
+    50%{
+        transform: translateX(-100%);
+        border-radius: 30%;
+    }
+
+    100%{
+        transform: translateX(-100%) translateY(100%);
+        border-radius: 50%;
+    }
+}
+
+@keyframes cajaD{
+    0%{
+        transform: translateX(-50%);
+        border-radius: 15%;
+    }
+
+    50%{
+        transform: translateX(-100%);
+        border-radius: 30%;
+    }
+
+    100%{
+        transform: translateX(-100%) translateY(-100%);
+        border-radius: 50%;
+    }
+}
+
+@keyframes cajaE{
+    0%{
+        transform: translateX(50%);
+        border-radius: 15%;
+    }
+
+    50%{
+        transform: translateX(100%);
+        border-radius: 30%;
+    }
+
+    100%{
+        transform: translateX(100%) translateY(-100%);
+        border-radius: 50%;
+    }
+}
+
+@keyframes cajaF{
+    0%{
+        transform: translateX(50%);
+        border-radius: 15%;
+    }
+
+    50%{
+        transform: translateX(100%);
+        border-radius: 30%;
+    }
+
+    100%{
+        transform: translateX(110%);
+        border-radius: 50%;
+    }
+}
+
+@keyframes cajaG{
+    0%{
+        transform: translateX(-50%);
+        border-radius: 15%;
+    }
+
+    50%{
+        transform: translateX(-100%);
+        border-radius: 30%;
+    }
+
+    100%{
+        transform: translateX(-110%);
+        border-radius: 50%;
+    }
+}
+
+@keyframes cajaK{
+    0%{
+        transform: translateY(-50%);
+        border-radius: 15%;
+    }
+
+    50%{
+        transform: translateY(-100%);
+        border-radius: 30%;
+    }
+
+    100%{
+        transform: translateY(-110%);
+        border-radius: 50%;
+    }
+}
+
+@keyframes cajaL{
+    0%{
+        transform: translateY(50%);
+        border-radius: 15%;
+    }
+
+    50%{
+        transform: translateY(100%);
+        border-radius: 30%;
+    }
+
+    100%{
+        transform: translateY(110%);
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width:700px){
+    body{
+        display: flex;
+        height: 95vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background:url(img/fondoPrincipal.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .title{
+            font-size: 30px;
+            padding: 15px;
+            border-radius: 50px;
+            margin-top: -10px;
+            text-align: center;
+        }
+        
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #fff;
+            background: linear-gradient(to top, #fff, #222);
+            position: relative;
+            padding: 140px 120px;
+            box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .6); 
+            background:rgba(68, 163, 5, 0.349);
+            animation-name: contenedo;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+        }
+
+ .cajaA , .cajaB, .cajaC, .cajaD, .cajaE, .cajaF, .cajaG
+, .cajaK, .cajaL{
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cajaA{
+    z-index: 100;
+    animation-fill-mode: forwards;
+    background: rgba(4, 124, 4, 0.705);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
